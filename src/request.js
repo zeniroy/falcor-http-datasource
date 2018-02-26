@@ -1,5 +1,5 @@
 'use strict';
-var getXMLHttpRequest = require('./getXMLHttpRequest');
+var getXMLHttpRequest = window?require('./getXMLHttpRequest.browser'):require('./getXMLHttpRequest');
 var getCORSRequest = require('./getCORSRequest');
 var hasOwnProp = Object.prototype.hasOwnProperty;
 
